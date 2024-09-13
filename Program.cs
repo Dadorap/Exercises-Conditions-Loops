@@ -1,4 +1,6 @@
-﻿namespace Exercises_Conditions_Loops
+﻿using System.Security;
+
+namespace Exercises_Conditions_Loops
 {
     internal class Program
     {
@@ -45,6 +47,19 @@
             //}
             //Console.WriteLine( $"{tal1}/{tal2} = {tal1/tal2}");
 
+            // övning 4
+            //int playersNumber = -1;
+
+            //while(playersNumber < 0 || playersNumber > 10)
+            //{
+            //    //Console.WriteLine($"well done! you number was: {playersNumber}");
+            //    Console.Write("Enter a number between 0 and 10: ");
+
+            //    string playerResp = Console.ReadLine();
+            //    playersNumber = int.Parse(playerResp);
+            //}
+
+            //Console.WriteLine($"well done! you number was: {playersNumber}");
         }
     }
 }
