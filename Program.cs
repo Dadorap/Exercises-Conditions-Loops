@@ -60,6 +60,18 @@ namespace Exercises_Conditions_Loops
             //}
 
             //Console.WriteLine($"well done! you number was: {playersNumber}");
+
+            for (int row = 0; row < 10; row++)
+            {
+                for (int col = 0; col <= row; col++)
+                {
+                    Console.Write("*");
+
+                }
+                Console.WriteLine();
+
+            }
+
         }
     }
 }
