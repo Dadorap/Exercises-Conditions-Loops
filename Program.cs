@@ -61,16 +61,63 @@ namespace Exercises_Conditions_Loops
 
             //Console.WriteLine($"well done! you number was: {playersNumber}");
 
-            for (int row = 0; row < 10; row++)
-            {
-                for (int col = 0; col <= row; col++)
-                {
-                    Console.Write("*");
+            //5 for loop övning
+            //for (int row = 0; row < 10; row++)
+            //{
+            //    for (int col = 0; col <= row; col++)
+            //    {
+            //        Console.Write("*");
 
-                }
-                Console.WriteLine();
+            //    }
+            //    Console.WriteLine();
 
-            }
+            //}
+
+            // övning 6
+            //Console.Write("Enter a number: ");
+            //int tal1 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter a number: ");
+            //int tal2 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter a number: ");
+            //int tal3 = int.Parse(Console.ReadLine());
+
+            //if(tal1 > tal2 && tal1 > tal3)
+            //{
+            //    Console.WriteLine($"största talet är: {tal1}");
+            //}
+            //else if(tal2 > tal1 && tal2 > tal3)
+            //{
+            //    Console.WriteLine($"största talet är: {tal2}");
+            //} else if(tal3 > tal1 && tal3 > tal2)
+            //{
+            //    Console.WriteLine($"största talet är: {tal3}");
+
+            //}
+            //else if (tal1.Equals(tal2) && tal1.Equals(tal3)) 
+            //{
+            //    Console.WriteLine(":O");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(":(");
+            //}
+
+            // övning 7
+            //Console.Write("Enter a number: ");
+            //int tal1 = int.Parse(Console.ReadLine());
+
+            //if ( tal1 > 10 )
+            //{
+            //    Console.WriteLine(tal1 +" är större än 10");
+            //}else if( tal1 < 10 )
+            //{
+            //    Console.WriteLine(tal1 + " är mindre än 10");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(tal1 + " är lika med 10");
+
+            //}
 
         }
     }
