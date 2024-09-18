@@ -1,4 +1,5 @@
 ﻿using System.Security;
+using System.Security.Cryptography;
 
 namespace Exercises_Conditions_Loops
 {
@@ -73,7 +74,7 @@ namespace Exercises_Conditions_Loops
 
             //}
 
-            // övning 6
+            // övning 5
             //Console.Write("Enter a number: ");
             //int tal1 = int.Parse(Console.ReadLine());
             //Console.Write("Enter a number: ");
@@ -102,7 +103,7 @@ namespace Exercises_Conditions_Loops
             //    Console.WriteLine(":(");
             //}
 
-            // övning 7
+            // övning 6
             //Console.Write("Enter a number: ");
             //int tal1 = int.Parse(Console.ReadLine());
 
@@ -119,6 +120,203 @@ namespace Exercises_Conditions_Loops
 
             //}
 
+            // övning 7
+            //Console.Write("Enter a temp: ");
+            //int temp = int.Parse(Console.ReadLine());
+
+            //if (temp < -10)
+            //{
+            //    Console.WriteLine("Det är jättekallt!");
+            //}
+            //else if (temp >= -10 && temp < 0)
+            //{
+            //    Console.WriteLine("Det är kallt!");
+            //}
+            //else if (temp >= 0 && temp < 10)
+            //{
+            //    Console.WriteLine("Det är milt");
+            //}
+            //else if (temp >= 10 && temp < 20)
+            //{
+            //    Console.WriteLine("Det är lagom");
+
+            //}
+            //else if (temp >= 20 && temp < 30)
+            //{
+            //    Console.WriteLine("Det är varmt!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Hjälp! Jag smälter!");
+            //}
+
+            //  Loops
+            // övning 8
+            //int x = 0;
+            //while(x <= 30)
+            //{
+            //    Console.WriteLine(x);
+            //    x++;
+            //}
+
+            // övning 9
+            //int x = 15;
+            //while (x >= -5)
+            //{
+            //    Console.WriteLine(x);
+            //    x--;
+            //}
+
+            // övning 10
+            //int x = 0;
+            //while (x <= 45)
+            //{
+            //    if(x % 3 == 0)
+            //        Console.WriteLine(x);
+            //    x++;
+            //}
+
+            // övning 11
+            //int x = 0;
+            //do
+            //{
+            //    Console.WriteLine(x);
+            //    x++;
+            //} while (x >= 100);
+
+            // övning 12
+            //for (int i = -5; i <= 23 ; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            // övning 13
+            //for (int i = -10; i >= -40; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            // övning 14
+            //for(int i =-30; i<= -10; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //övning 15
+            //for (int i = 0; i <= 100; i++)
+            //{
+            //    if (i % 5 == 0)
+            //        Console.WriteLine(i);
+            //}
+
+            //övning 16
+            //Console.Write("Enter a number: ");
+            //int x = int.Parse(Console.ReadLine());
+            //for (int i = 0; i <= x; i++)
+            //{
+            //    Console.Write(x);
+            //}
+
+            // övning 17
+            //for (int i = 0; i <= 30; i++)
+            //{
+            //    if (i == 3 || i == 15 || i == 27)
+            //    {
+            //        Console.WriteLine("hey");
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+
+            // övning 18
+            //Console.Write("Enter a number");
+            //int x = int.Parse(Console.ReadLine());
+            //for (int i = 40; i <= 70; i++)
+            //{
+            //    if (i == x)
+            //    {
+            //        Console.WriteLine();
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+
+            // övning 19
+            // int x = 15;
+            //while (x >= 7)
+            // {
+            //     if(x % 2 == 1)
+            //     {
+            //     Console.WriteLine(x);
+            //     }
+            //     x--;
+            // }
+
+            // övning 20
+            //while (true)
+            //  {
+            //      Console.Write("Enter a text: ");
+            //      string x = Console.ReadLine();
+            //      Console.WriteLine(x);
+            //      if (x =="sluta")
+            //      {
+            //          break;
+            //      }
+            //  }
+
+            // övning 22
+            //int rng = new Random().Next(1, 50);
+            //int counter = 5;
+            //while (counter >= 1)
+            //{
+            //    Console.Write($"Enter a number between 1 - 5 you have {counter} attempt: ");
+            //    int x = int.Parse(Console.ReadLine());
+
+            //    if (x < rng)
+            //    {
+            //        Console.WriteLine($"To low ");
+            //        counter--;
+            //    }
+            //    else if (x > rng )
+            //    {
+            //        Console.WriteLine($"To high ");
+            //        counter--;
+            //    }
+            //    else if (x == rng)
+            //    {
+            //        Console.WriteLine("Congratz");
+            //        break;
+            //    }
+            //}
+            //if (counter == 0)
+            //{
+            //    Console.WriteLine("You'v lost!");
+            //}
+
+            // övning 23
+            int rows = 5;
+
+            // Endast en loop för att skapa hela mönstret
+            for (int i = 1; i < 10; i++)
+            {
+                // Om vi är på de första 5 raderna (uppåtgående del)
+                //if (i <= rows)eeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                //{
+                //    for (int j = 1; j <= i; j++)
+                //    {
+                //        Console.Write("*");
+                //    }
+                //}
+                // Om vi är på de sista 4 raderna (nedåtgående del)
+             
+                    for (int j = 1; j <= (5 - i); j++)
+                    {
+                        Console.Write("*");
+                    }
+                
+
+                Console.WriteLine();
+            }
         }
     }
 }
